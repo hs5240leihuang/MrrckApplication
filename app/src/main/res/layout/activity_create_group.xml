@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="创建群"
+        app:left_res_title="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/iv_xuxian"
+                        android:layout_width="115.42dp"
+                        android:layout_height="115.42dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="51.42dp"
+                        android:background="@drawable/xuxian"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_grouphead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75dp"
+                        android:src="@drawable/quntouxiang" />
+
+                    <TextView
+                        android:id="@+id/tv_addhead"
+                        style="@style/text_clo999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_grouphead"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="添加群头像"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:orientation="vertical"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp" >
+
+                <TextView
+                    style="@style/text_clo666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群名称"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_groupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@null"
+                    android:hint="请输入群名字,最多50个字"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColorHint="#999"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_clo666"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="是否公开"
+                        android:textSize="14sp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_opened"
+                        android:layout_width="50.5dp"
+                        android:layout_height="30.5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/switch_btn"
+                        android:checked="true"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_clo666"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="群聊进群确认"
+                        android:textSize="14sp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_needYZ"
+                        android:layout_width="50.5dp"
+                        android:layout_height="30.5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/switch_btn"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启用后,群成员需要群主确认才可以进群 。"
+                    android:textColor="#AAAAAA" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    style="@style/text_clo666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="群介绍"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius_border_bg_grey"
+                    android:gravity="start"
+                    android:hint="描述这是怎样的群,300字以内。"
+                    android:maxLength="300"
+                    android:minHeight="82dp"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="44.57dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/mrrck_bg"
+                    android:text="确 定"
+                    android:textColor="@color/white"
+                    android:textScaleX="1.0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

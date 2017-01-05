@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_jobName"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_zp"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:gravity="center_vertical"
+            android:textColor="#999"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_bossType"
+                style="@style/text_clo999_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_purple"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_bossType2"
+                style="@style/text_clo999_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/round_purple"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_compName"
+                style="@style/text_clo666"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/radius_border_mrrck_solid"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="顶"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:gravity="right|center_vertical"
+            android:textColor="#fdb35e"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/text_clo999_14"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_clo999_14"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>

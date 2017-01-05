@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitle
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/mrrck_bg"
+        wk:center_txt_title="查看作品"
+        wk:left_res_title="@drawable/back" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/pull_refresh"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:smoothScrollbar="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.meiku.dev.views.MyListView
+                    android:id="@+id/pl_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/gray"
+                    android:dividerHeight="1px"
+                    android:listSelector="#00000000" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f2f2f2"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/smallIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_xiaolian" />
+
+                <com.meiku.dev.views.EmotionEditText
+                    android:id="@+id/et_pinglun"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_border_bg"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="发表评论"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emotionLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/chat_bottom_more_height"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

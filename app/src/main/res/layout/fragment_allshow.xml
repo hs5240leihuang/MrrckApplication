@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/statuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/mrrck_bg" />
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_below="@+id/statuslayout"
+        android:background="@color/white"
+        wk:center_txt_title="秀场"
+        wk:right_txt_title="发布" />
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toptitle"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/topTabLayout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_saishi"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/radius_border_mrrck_solid"
+            android:text="参赛"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/white"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp" >
+
+        <include layout="@layout/include_search" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchLayout"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/toptotile_apply_for_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="企业信息修改"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="提交" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <!-- 企业LOGO -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_logo"
+                        style="@style/company"
+                        android:layout_height="80dp" >
+
+                        <include layout="@layout/include_mi_empty" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="企业LOGO" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/right_arrow_gray" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+                    <!-- 企业营业执照 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_license"
+                        style="@style/company"
+                        android:layout_height="80dp" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="企业营业执照" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_zhizhao"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_upload_license"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:hint="未上传"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow_gray"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+                    <!-- 企业名称 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_name"
+                        style="@style/company"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="企业名称" />
+
+                        <EditText
+                            android:id="@+id/et_complanyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+                    <!-- 所在城市 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_city"
+                        style="@style/company" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="所在城市" />
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:hint="请选择"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/right_arrow_gray" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+                    <!-- 公司地址 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_address"
+                        style="@style/company"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公司地址" />
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/icon_wodeqiuzhi"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+
+                    <!-- 公司邮箱 -->
+
+                    <LinearLayout
+                        style="@style/company"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp" >
+
+                        <include layout="@layout/include_mi_empty" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公司邮箱" />
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+                    <!-- 企业规模 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_complanyPeople"
+                        style="@style/company" >
+
+                        <include layout="@layout/include_mi_empty" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="企业规模" />
+
+                        <TextView
+                            android:id="@+id/tv_complanyPeople"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:hint="请选择"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+
+                    <!-- 联系人 -->
+
+                    <LinearLayout style="@style/company" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系人" />
+
+                        <EditText
+                            android:id="@+id/et_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="34dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:maxLength="12"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+                    <!-- 联系电话 -->
+
+                    <LinearLayout style="@style/company" >
+
+                        <include layout="@layout/include_mi" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话" />
+
+                        <EditText
+                            android:id="@+id/et_phoneNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:inputType="phone"
+                            android:maxLength="14"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+
+                    <!-- 公司网址 -->
+
+                    <LinearLayout
+                        style="@style/company"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp" >
+
+                        <include layout="@layout/include_mi_empty" />
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公司主页" />
+
+                        <EditText
+                            android:id="@+id/et_website"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="left|center_vertical"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fenggexian" />
+
+                    <!-- 企业简介 -->
+
+                    <LinearLayout
+                        style="@style/company"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" >
+
+                        <TextView
+                            style="@style/text_clo333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="公司简介" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp" >
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="2dp"
+                                android:layout_height="13dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="4dp"
+                                android:background="#FF3499" />
+
+                            <EditText
+                                android:id="@+id/et_introduce"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="@null"
+                                android:ems="10"
+                                android:gravity="top"
+                                android:hint="请输入"
+                                android:inputType="textMultiLine"
+                                android:maxLength="1000"
+                                android:minLines="4"
+                                android:paddingLeft="5dp"
+                                android:textCursorDrawable="@drawable/edittext_cursor"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <!-- 上传视频 -->
+
+                        <FrameLayout
+                            android:id="@+id/frame_top"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="14dp" >
+
+                            <LinearLayout
+                                android:id="@+id/lay_upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:id="@+id/icon_zhaoxiang"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/addvideo"
+                                    android:scaleType="centerCrop" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_play"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pc_video_play"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_del"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="right"
+                                android:src="@drawable/red_delete"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/videoInfoLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/videoInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#999"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/videoReSet"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_common_selector"
+                                android:text="重新上传"
+                                android:textColor="@drawable/textselctor_w_2_r"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 公司照片上传 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" >
+
+                        <com.meiku.dev.views.MyGridView
+                            android:id="@+id/gridview_uploadpic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fadingEdge="none"
+                            android:gravity="center"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="3"
+                            android:listSelector="@color/transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+                    <!-- "资质荣誉" -->
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:paddingLeft="10dp"
+                        android:text="资质荣誉" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="13dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="4dp"
+                            android:background="#FF3499" />
+
+                        <EditText
+                            android:id="@+id/et_zzry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="请输入"
+                            android:inputType="textMultiLine"
+                            android:maxLength="500"
+                            android:minLines="4"
+                            android:paddingLeft="5dp"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <com.meiku.dev.views.MyGridView
+                        android:id="@+id/gridview_uploadzzpic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:fadingEdge="none"
+                        android:listSelector="@color/transparent"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+                    <!-- 设计团队 -->
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:paddingLeft="10dp"
+                        android:text="设计团队" />
+
+                    <ImageView
+                        android:id="@+id/iv_addTeamPeople"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/adddesigner" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_teamGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+                    <!-- 自定义项 -->
+
+                    <LinearLayout
+                        android:id="@+id/layout_moreGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/addOnemoreLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/addmoreinfo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="15dp"
+                        android:text="最多可添加3个自定义项"
+                        android:textColor="#aaaaaa"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="#f5f6fb" />
+                    <!-- 老板性格标签 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center_vertical" >
+
+                            <include layout="@layout/include_mi_empty" />
+
+                            <TextView
+                                style="@style/text_clo333"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="老板性格标签：（最多两项）" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="发布招聘信息时需要"
+                                android:textColor="#999999" />
+                        </LinearLayout>
+
+                        <com.meiku.dev.views.MyGridView
+                            android:id="@+id/gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fadingEdge="none"
+                            android:gravity="center"
+                            android:horizontalSpacing="14dp"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="3"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:visibility="gone" />
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

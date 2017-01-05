@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="聊天设置"
+        app:left_res_title="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <!-- 头部 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.meiku.dev.views.MyGridView
+                    android:id="@+id/gv_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:padding="15dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_allmember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="13.71dp" >
+
+                    <TextView
+                        android:id="@+id/tv_membernum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="全部群成员（）"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 群信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/layout_grouphead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="设置群头像"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_addImage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/layout_groupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="群聊名称"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <TextView
+                        android:id="@+id/tv_groupname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:hint="未命名"
+                        android:textColor="#666666"
+                        android:textSize="12.57sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/layout_groupnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="群号"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <TextView
+                        android:id="@+id/tv_groupnumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:textColor="#666666"
+                        android:textSize="12.57sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/layout_groupqrcpde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="群二维码"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_qrcode"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/gg_icon" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/layout_groupnotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="群介绍"
+                            android:textColor="#333333"
+                            android:textSize="14.86sp" />
+
+                        <TextView
+                            android:id="@+id/tv_notification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:textColor="#666666"
+                            android:textSize="12.57sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 群消息设置 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="消息免打扰"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:id="@+id/tb_message"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/lin_ispublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="是否公开"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:id="@+id/tb_public"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ios7_switch_off" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="置顶聊天"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:id="@+id/tb_top"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ios7_switch_off" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/lin_iscommit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="群聊进群确认"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ImageView
+                        android:id="@+id/tb_needYZ"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ios7_switch_off" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启用后,群成员需要群主确认才可以进群 。"
+                    android:textColor="#AAAAAA" />
+
+                <View
+                    android:id="@+id/view_iscommit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/layout_mygroupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我在本群中的昵称"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mygroupname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:textColor="#666666"
+                        android:textSize="12.57sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="显示群成员昵称"
+                        android:textColor="#333333"
+                        android:textSize="14.86sp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_showname"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/switch_btn"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cleanchatlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="清空聊天记录"
+                android:textColor="#333333"
+                android:textSize="14.86sp" />
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="match_parent"
+                android:layout_height="37.71dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/mrrck_bg"
+                android:gravity="center"
+                android:text="删除并退出"
+                android:textColor="@color/white"
+                android:textSize="14.86sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

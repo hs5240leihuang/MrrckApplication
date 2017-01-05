@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_search_withleft" />
+
+    <RelativeLayout
+        android:id="@+id/ADlayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <!-- 广告 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adPager"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+        <!-- 点阵 -->
+
+        <com.meiku.dev.views.IndicatorView
+            android:id="@+id/indicatorGroup"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+        </com.meiku.dev.views.IndicatorView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTypes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:clipChildren="true"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:gravity="center"
+            android:headerDividersEnabled="false"
+            android:horizontalSpacing="15dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_myproduct"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_redround_selector"
+            android:text="我的收藏"
+            android:textColor="@drawable/textselctor_w_2_r"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_redround_selector"
+            android:text="发布产品"
+            android:textColor="@drawable/textselctor_w_2_r"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

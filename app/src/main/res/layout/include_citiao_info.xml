@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#FE4D78" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="词条名"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_citiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:hint="请输入你要创建的达人词条"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#FE4D78" />
+
+            <TextView
+                android:id="@+id/tv_gaishu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="概述"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/img_neiceng"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:background="@drawable/entry_gaishu"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/img_waiceng"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_gaishu"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/bak_gray"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:hint="请简单描述词条的主要内容和关键信息，点击后输入"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="举报"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="提交" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/text_clo333_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举报对象:" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#2F82D6"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/radius_border_bg_greylight"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:minLines="4"
+        android:padding="2dp"
+        android:textColor="#B8B8B8" />
+
+    <TextView
+        style="@style/text_clo333_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="举报原因:" />
+
+    <com.meiku.dev.views.MyGridView
+        android:id="@+id/gridview"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:horizontalSpacing="40dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+</LinearLayout>

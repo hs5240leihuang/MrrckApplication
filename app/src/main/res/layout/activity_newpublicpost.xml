@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="发布帖子"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="发布" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top_title"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#efeff4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/btn_express"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/newpost_xiaolian" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emotionLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_bottom_more_height"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar"
+        android:layout_below="@+id/line" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lin_huati"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="22dp" >
+
+                <TextView
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="话题"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF3499" />
+
+                <TextView
+                    android:id="@+id/tv_huati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:hint="选择话题"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#aaaaaa"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="22dp" >
+
+                <TextView
+                    android:id="@+id/tv_biaoti"
+                    android:layout_width="37dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:text="标题"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="17dp"
+                    android:background="#FF3499" />
+
+                <com.meiku.dev.views.EmotionEditText
+                    android:id="@+id/et_biaoti"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    android:hint="限50字之内"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:minHeight="50dp"
+                    android:textColorHint="#AAAAAA"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="22dp" >
+
+                <TextView
+                    android:layout_width="37dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:text="内容"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="17dp"
+                    android:background="#FF3499" />
+
+                <com.meiku.dev.views.EmotionEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="限5000字之内"
+                    android:inputType="textMultiLine"
+                    android:maxLength="5000"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#AAAAAA"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F6FB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginTop="20dp" >
+
+                    <ImageView
+                        android:id="@+id/btn_picture"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background="@drawable/add_photo"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delect"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="top|right"
+                        android:background="@drawable/post_delect"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="14dp"
+                    android:text="图片格式:GIF、JPG、JPEG、PNG"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+           <!--  <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_btn_press"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

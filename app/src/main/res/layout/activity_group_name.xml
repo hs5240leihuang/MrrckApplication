@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="群名片"
+        app:left_res_title="@drawable/back"
+        app:right_txt_title="完成" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="群聊名称"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tv_groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:maxLength="50"
+        android:padding="15dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        android:textSize="20sp" />
+
+</LinearLayout>

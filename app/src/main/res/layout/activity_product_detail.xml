@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="产品详情"
+        wk:left_res_title="@drawable/back"
+        wk:right_res_title="@drawable/blackthreepoint" />
+
+    <LinearLayout
+        android:id="@+id/lin_productbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F2F2"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_clo333_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/text_clo333_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnAddfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radius_border_mrrck_solid"
+            android:drawableLeft="@drawable/icon_jiaweihaoyou"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="加好友"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/intent_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radius_border_mrrck_solid"
+            android:drawableLeft="@drawable/yixiangshenqing"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="意向申请"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin_productbody"
+        android:layout_below="@id/title_bar" >
+    </WebView>
+
+</RelativeLayout>

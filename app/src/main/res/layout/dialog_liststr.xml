@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteround"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <ListView
+        android:id="@+id/messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/selector_popupwindow"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1px"
+        android:minHeight="40dp" />
+
+    <View
+        android:id="@+id/bottomEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000" />
+
+</LinearLayout>

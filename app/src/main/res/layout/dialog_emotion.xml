@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:scaleType="fitXY"
+        android:src="@drawable/fenggexian" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/emotionPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 点阵 -->
+
+    <com.meiku.dev.views.IndicatorView
+        android:id="@+id/indicatorGroup"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center" >
+    </com.meiku.dev.views.IndicatorView>
+
+</LinearLayout>

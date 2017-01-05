@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    tools:context="com.meiku.dev.ui.activitys.setting.FeedBackActivity" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="意见反馈"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="提交" />
+
+    <EditText
+        android:id="@+id/feedET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius_border_bg_grey"
+        android:gravity="left|top"
+        android:maxLength="120"
+        android:minHeight="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/edittext_cursor" />
+
+</LinearLayout>

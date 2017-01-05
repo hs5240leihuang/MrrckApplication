@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteround_stroke_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/lin_head"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gender"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_below="@+id/lin_head"
+            android:layout_marginLeft="-19dp"
+            android:layout_marginTop="-19dp"
+            android:layout_toRightOf="@+id/lin_head"
+            android:background="@drawable/girl_r" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/lin_head"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/work_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/lin_head"
+            android:text="从业年龄："
+            android:textColor="#666" />
+
+        <TextView
+            android:id="@+id/skill_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_age"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/lin_head"
+            android:text="技能："
+            android:textColor="#666" />
+
+        <TextView
+            android:id="@+id/skill_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_age"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/skill_text"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="#666" />
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/work_age"
+            android:textColor="#666" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/work"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:background="@drawable/m_saiqu" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textColor="#666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/launch_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="10dp"
+            android:text="退出查看"
+            android:textColor="#33c2e5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/check_your_resume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="10dp"
+            android:text="查看简历"
+            android:textColor="#33c2e5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

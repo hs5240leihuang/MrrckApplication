@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/statuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/topTab"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" >
+
+            <LinearLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tv_shaixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="筛选人员"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/topTab"
+            android:background="@color/light_gray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/line"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </RelativeLayout>
+
+</LinearLayout>

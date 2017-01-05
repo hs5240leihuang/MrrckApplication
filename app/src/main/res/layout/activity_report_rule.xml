@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.meiku.dev.views.TopTitleBar
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="举报须知"
+        app:left_res_title="@drawable/back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/toptitle"
+        android:gravity="center"
+        style="@style/text_black_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="举报须知" />
+
+    <TextView
+        android:layout_below="@id/title"
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你应保证你的举报行为基于善意，并代表你本人真实意思。美库作为中立的平台服务者，收到你举报后，会尽快按照相关法律法规的规定独立判断并进行处理。美库将会采取合理的措施保护你的个人信息；除法律法规规定的情形外，未经用户许可美库不会向第三方公开、透露你的个人信息。" />
+
+</RelativeLayout>

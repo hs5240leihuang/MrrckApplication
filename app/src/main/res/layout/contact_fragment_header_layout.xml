@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/whiteround"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_new"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_layout_common"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <FrameLayout
+            android:id="@+id/frame_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="24.5dp"
+                    android:layout_height="24.5dp"
+                    android:src="@drawable/new_newfriend" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_msg_tips"
+                android:layout_width="@dimen/tip_icon_size"
+                android:layout_height="@dimen/tip_icon_size"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/common_msg_tips"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新的朋友"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_layout_common"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26.5dp"
+                android:layout_height="25dp"
+                android:src="@drawable/new_qunliao" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群聊"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_groupNotify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_layout_common"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <FrameLayout
+            android:id="@+id/frame_groupNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="21.5dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/new_tongzhi" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_groupNofity"
+                android:layout_width="@dimen/tip_icon_size"
+                android:layout_height="@dimen/tip_icon_size"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/common_msg_tips"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_groupNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群验证通知"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

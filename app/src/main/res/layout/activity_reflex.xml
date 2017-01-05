@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="回复"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="提交" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top_title"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#efeff4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/btn_express"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/newpost_xiaolian" />
+
+            <ImageView
+                android:id="@+id/btn_jianpan"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jianpai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emotionLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_bottom_more_height"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar"
+        android:layout_below="@+id/line" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="22dp" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF3499" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复    :"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <com.meiku.dev.views.EmotionEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#AAAAAA"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

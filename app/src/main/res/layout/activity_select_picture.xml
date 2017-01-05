@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#44000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="拍照"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="从相册选择"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <Button
+            android:id="@+id/btn_pick_mrrck"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="从美库相册选择"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="保存"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#747475" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="取消"
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

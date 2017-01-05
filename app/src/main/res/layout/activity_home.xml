@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fbfbfb"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 找同行 -->
+
+        <RelativeLayout
+            android:id="@+id/id_tab_comm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/id_img_tab_comm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/iocn_newzhaotonghangok"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/txt_main_bottom_comm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_img_tab_comm"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/txt_im"
+                android:textColor="@color/home_buttom_txt_red"
+                android:textSize="@dimen/menu_text" />
+
+            <TextView
+                android:id="@+id/message_dian"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@+id/id_img_tab_comm"
+                android:background="@drawable/lou"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <com.meiku.dev.yunxin.recent.DropFake
+                android:id="@+id/tab_new_msg_label"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@+id/id_img_tab_comm"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!-- 直播 -->
+
+        <RelativeLayout
+            android:id="@+id/id_tab_IM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/id_img_tab_IM"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/id_img_tab_Circle"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_kaidianpu"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/txt_main_bottom_IM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_img_tab_Circle"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_comm"
+                android:textColor="@color/home_buttom_txt_gray"
+                android:textSize="@dimen/menu_text" />
+        </RelativeLayout>
+
+        <!-- 偷学艺 -->
+
+        <RelativeLayout
+            android:id="@+id/id_tab_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/id_img_tab_show"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_touxueyi"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/txt_main_bottom_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_img_tab_show"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_show"
+                android:textColor="@color/home_buttom_txt_gray"
+                android:textSize="@dimen/menu_text" />
+        </RelativeLayout>
+
+        <!-- 开店帮 -->
+
+        <RelativeLayout
+            android:id="@+id/id_tab_morefun"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/id_img_tab_morefun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_kaidianpu"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/txt_main_bottom_morefun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_img_tab_morefun"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_Service"
+                android:textColor="@color/home_buttom_txt_gray"
+                android:textSize="@dimen/menu_text" />
+        </RelativeLayout>
+
+        <!-- 我的 -->
+
+        <RelativeLayout
+            android:id="@+id/id_tab_mine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/id_img_tab_mine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_newwode"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/txt_main_bottom_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_img_tab_mine"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_mine"
+                android:textColor="@color/home_buttom_txt_gray"
+                android:textSize="@dimen/menu_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/linear"
+        android:layout_marginBottom="-1px"
+        android:scaleType="fitXY"
+        android:src="@drawable/fenggexian" />
+
+    <com.meiku.dev.views.MyViewpager
+        android:id="@+id/content_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linear"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:id="@+id/layout_perfectInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/linear"
+        android:layout_alignBottom="@+id/content_viewpager"
+        android:alpha="0.8"
+        android:background="@color/mrrck_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="完善资料，马上互动呦~  >"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/statuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <com.meiku.dev.yunxin.recent.DropCover
+        android:id="@+id/unread_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statuslayout"
+        android:visibility="invisible" />
+
+</RelativeLayout>

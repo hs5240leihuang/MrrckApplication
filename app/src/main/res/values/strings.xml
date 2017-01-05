@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美库</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_tab_first_txt">社区</string>
+    <string name="main_tab_second_txt">同岗私聊</string>
+    <string name="main_tab_three_txt">更多功能</string>
+    <string name="main_tab_four_txt">我的</string>
+    <string name="txt_comm">直播</string>
+    <string name="txt_show">秀场</string>
+    <string name="txt_morefun">功能</string>
+    <string name="txt_Service">开店帮</string>
+    <string name="txt_im">找同行</string>
+    <string name="txt_circle">动态圈</string>
+    <string name="txt_mine">我的</string>
+
+    <!-- 赛事 -->
+    <string name="match_works">参赛作品</string>
+    <string name="match_intro">赛事介绍</string>
+    <string name="match_enroll">我要\n报名</string>
+    <string name="match_area">赛区</string>
+    <string name="match_rainking">冠军排名</string>
+
+    <!-- 快捷发布 -->
+
+    <string name="take_success">发布成功</string>
+    <string name="take_fail">发布失败</string>
+    <string name="user_and_public">使用并公开</string>
+    <string name="user_no_public">使用不公开</string>
+    <string name="cancel">取消</string>
+    <string name="del_vefy">删除确认</string>
+    <string name="del_fail">删除失败</string>
+    <string name="add_fail">添加失败</string>
+    <string name="mod_fail">修改失败</string>
+    <string name="del_success">删除成功</string>
+    <string name="add_success">添加成功</string>
+    <string name="mod_success">修改成功</string>
+    <string name="net_exception">网路异常,请稍后重试</string>
+    <string name="txt_home_jlzx">我的简历</string>
+    <string name="commit">提交</string>
+
+    <!-- volley请求返回 -->
+    <string name="volley_error_Timeout">连接超时,请稍后重试</string>
+    <string name="volley_error_NetworkError">网路异常,请稍后重试</string>
+    <string name="volley_error_ServerError">服务端异常,请稍后重试</string>
+    <string name="volley_error_Other">获取数据失败！</string>
+    <string name="netNoUse">当前网络不可用，请检查你的网络设置</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <string name="title_activity_reply">ReplyActivity</string>
+    <string name="reply">回&#160;&#160;复</string>
+    <string name="title_reply">回复帖子</string>
+    <string name="confirm">确定</string>
+    <string name="title_activity_release_topic">ReleaseTopic</string>
+    <string name="title_releasetopic">发表帖子</string>
+    <string name="release">发布</string>
+    <string name="topic">话&#160;&#160;题</string>
+    <string name="title">标&#160;&#160;题</string>
+    <string name="addpicture">图片</string>
+    <string name="addexpress">表情</string>
+    <string name="addlabel">标签</string>
+    <string name="share">&#160;&#160;分享&#160;&#160;</string>
+    <string name="share_title">分享名片</string>
+    <string name="title_activity_userprivacy">隐私设置</string>
+    <string name="title_activity_personal_main">PersonalMainActivity</string>
+    <string name="title_activity_personal_posts">PersonalPostsActivity</string>
+    <string name="title_activity_personal_fans">PersonalFansActivity</string>
+    <string name="title_activity_personal_community">PersonalCommunityActivity</string>
+    <string name="title_activity_personal_collect">PersonalCollectActivity</string>
+    <string name="title_activity_personal_focus">PersonalFocusActivity</string>
+    <string name="title_activity_ta_main">TaMainActivity</string>
+    <string name="title_activity_personal_vedio">PersonalVedioActivity</string>
+    <string name="title_activity_personal_image">PersonalImageActivity</string>
+
+    <!-- 活动tabs -->
+    <string name="tab_vote_csxs">参赛选手</string>
+    <string name="tab_vote_hdgz">活动规则</string>
+    <string name="tab_vote_wybm">我要报名</string>
+    <string name="tab_vote_jxsz">奖项设置</string>
+    <string name="tab_vote_hdhg">活动回顾</string>
+    <string name="tab_vote_bspm">比赛排名</string>
+    <string name="tab_vote_sspm">实时排名</string>
+    <string name="title_activity_select_vedio">SelectVedioActivity</string>
+    <string name="title_activity_edit_personal_info">EditPersonalInfoActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_image_show">ImageShowActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="title_activity_about_mrrck">AboutMrrckActivity</string>
+    <string name="title_activity_member_list">MemberListActivity</string>
+    <string name="contact_search">搜索</string>
+    <string name="title_activity_group_manage">GroupManageActivity</string>
+    <string name="title_activity_group_name">GroupNameActivity</string>
+    <string name="title_activity_group_qrcode">GroupQRCodeActivity</string>
+    <string name="title_activity_group_notification">GroupNotificationActivity</string>
+    <string name="title_activity_delete_member">DeleteMemberActivity</string>
+    <string name="title_activity_new_friend">NewFriendActivity</string>
+    <string name="title_activity_create_group_chat">CreateGroupChatActivity</string>
+    <string name="title_activity_search_post">SearchPostActivity</string>
+    <string name="title_activity_edit_post">EditPostActivity</string>
+
+    <!-- 聊天页面使用 -->
+    <string name="chat_bottom_picture">图片</string>
+    <string name="chat_bottom_camera">拍摄</string>
+    <string name="chat_bottom_card">名片</string>
+    <string name="chat_bottom_video">本地视频</string>
+    <string name="chat_bottom_location">位置</string>
+    <string name="chat_emotion">表情</string>
+    <string name="chat_file">文件传输</string>
+    <string name="chat_pleaseCheckNetwork">请检查网络</string>
+    <string name="chat_activity_loadMessagesFinish">聊天记录加载完毕</string>
+    <string name="chat_record_button_haveRead">已阅读</string>
+    <string name="chat_record_button_slideUpToCancel">手指上滑，取消发送</string>
+    <string name="chat_record_button_releaseToCancel">松开手指，取消录音</string>
+    <string name="chat_sessionPausedTips">会话暂停，等网络良好</string>
+    <string name="chat_serverDiscon">消息服务器连接中，请耐心等待...</string>
+    <string name="chat_activity_select_picture">选择图片</string>
+    <string name="chat_cloudCodeNotDeployTips">云代码未部署，请到项目主页根据说明来部署</string>
+    <string name="chat_record_button_pleaseSayMore">说多点吧～</string>
+    <string name="chat_bottom_record_layout_pressToRecord">按住说话</string>
+    <string name="chat_cancelRecord">取消录音</string>
+    <string name="title_activity_choose_group">ChooseGroupActivity</string>
+    <string name="title_activity_group_member">GroupMemberActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="title_activity_add_group_member">AddGroupMemberActivity</string>
+    <string name="title_activity_ta_group">TaGroupActivity</string>
+    <string name="title_activity_edit_comp_info">EditCompInfoActivity</string>
+    <string name="title_activity_enroll">EnrollActivity</string>
+    <string name="title_activity_award">AwardActivity</string>
+    <string name="title_activity_publish_works">PublishWorksActivity</string>
+    <string name="title_activity_publish_photo_works">PublishPhotoWorksActivity</string>
+    <string name="title_activity_enroll_vedio">EnrollVedioActivity</string>
+    <string name="title_activity_select_all_city">SelectAllCityActivity</string>
+    <string name="errorUrl">网址错误!</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_report_success">ReportSuccessActivity</string>
+    <string name="title_activity_report_rule">ReportRuleActivity</string>
+    <string name="title_activity_edit_work">EditWorkActivity</string>
+    <string name="title_activity_match_district">MatchDistrictActivity</string>
+    <string name="title_activity_past_match">PastMatchActivity</string>
+    <string name="title_activity_my_product">MyProductActivity</string>
+    <string name="title_activity_my_collect">MyCollectActivity</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="about">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;美容行业从业者的开店助手和熟手技师集中营。\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;为美业手艺人的职场成长提供机遇、秀场、工具及资讯服务，被美业手艺人称为“1分钟找到你需要的同行”的社交软件！也是美业店老板的运营助手。\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;美库网由上海美库网络科技公司和红妆传媒联合出品，以解决美业手艺人职场成长难的问题为使命，做全球美业人的红娘，打造美业人职场成长的一站式服务平台。\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;找人、找产品、找装修、找资金、找策划培训等；请联系美库小红娘400-688-6800</string>
+    <string name="title_activity_intent_apply">IntentApplyActivity</string>
+    <string name="title_activity_buy_top">BuyTopActivity</string>
+    <string name="fullscreen_watch">全屏查看</string>
+    <string name="copy">复制</string>
+    <string name="tab_recruit_nearresume">附近简历</string>
+    <string name="tab_recruit_searchresume">搜索简历</string>
+    <string name="tab_recruit_publishresume">发布职位</string>
+    <string name="tab_recruit_myresume">我的招聘</string>
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">最多只能选择9张图片</string>
+    <string name="gotoregist"><u>去注册</u></string>
+    <string name="forgetpassword"><u>忘记密码？</u></string>
+
+    <!-- 拍照视频 -->
+    <string name="gallery_invalid">你的手机没有图库程序</string>
+    <string name="sdcard_not_enough_head_error">SD卡被拔出或存储空间不足，无法保存头像</string>
+    <string name="sdcard_not_enough_error">存储空间不足，无法保存此次多媒体消息</string>
+    <string name="download_video">正在下载视频</string>
+    <string name="download_video_fail">视频下载失败,请重试</string>
+    <string name="look_video_fail">无法播放该视频</string>
+    <string name="look_video_fail_try_again">暂时无法播放视频，请重试</string>
+    <string name="video_play">视频播放</string>
+    <string name="video_record">视频录制</string>
+    <string name="video_record_symbol">REC</string>
+    <string name="video_record_begin">开始录制</string>
+    <string name="connect_vedio_device_fail">无法连接视频设备 ，请稍候再试</string>
+    <string name="capture_video_size_in_kb">视频文件大小为: %1$dKB,</string>
+    <string name="capture_video_size_in_mb">视频文件大小为: %1$.2fMB,</string>
+    <string name="is_send_video">是否发送该视频？</string>
+    <string name="start_camera_to_record_failed">启动摄像头录制视频失败</string>
+    <string name="stop_fail_maybe_stopped">停止失败，可能已经停止</string>
+    <string name="video_exception">视频文件异常</string>
+    <string name="im_choose_video_file_size_too_large">视频文件过大，系统限制为20MB</string>
+    <string name="im_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="video_record_short">录制视频太短</string>
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string>
+    <string name="picture_save_fail">图片保存失败</string>
+    <string name="picture_save_to">图片已保存到手机</string>
+    <string name="picker_image_error">获取图片出错</string>
+    <string name="download_picture_fail">图片下载失败</string>
+    <string name="look_up_original_photo_format">查看原图（%s）</string>
+
+    <!-- 语音 -->
+    <string name="record_audio">按住 说话</string>
+    <string name="record_audio_end">松开  结束</string>
+    <string name="sdcard_not_exist_error">请插入SD卡</string>
+    <string name="recording_error">录音失败，请重试</string>
+    <string name="recording_init_failed">初始化录音失败</string>
+    <string name="recording_cancel">手指上滑，取消发送</string>
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel_tip">松开手指，取消发送</string>
+    <string name="recording_max_time">录音达到最大时间，是否发送？</string>
+    <string name="repeat_download_message">重新下载?</string>
+    <string name="repeat_send_has_blank">重 发</string>
+    <string name="repeat_send_message">重发消息?</string>
+    <string name="copy_has_blank">复 制</string>
+    <string name="delete_has_blank">删 除</string>
+    <string name="voice_to_text">转文字</string>
+    <string name="forward_to_person">转发到个人</string>
+    <string name="forward_to_team">转发到群组</string>
+    <string name="withdrawn_msg">撤 回</string>
+    <string name="save">保存</string>
+    <string name="main_msg_list_delete_chatting">删除该聊天</string>
+    <string name="main_msg_list_sticky_on_top">置顶该聊天</string>
+    <string name="main_msg_list_clear_sticky_on_top">取消置顶</string>
+    <string name="revoke_failed">发送时间超过2分钟的消息，不能被撤回</string>
+    <string name="trans_voice_failed">语音转化失败</string>
+    <string name="file_transfer_state_downloaded">已下载</string>
+    <string name="file_transfer_state_undownload">未下载</string>
+    <!-- 加入群 -->
+    <string name="team_apply_to_join_send_success">申请已发出</string>
+    <string name="has_exist_in_team">已经在群里</string>
+
+      <!-- team -->
+    <string name="team_need_authentication">需要身份验证</string>
+    <string name="team_allow_anyone_join">允许任何人加入</string>
+    <string name="team_not_allow_anyone_join">不允许任何人申请加入</string>
+    <string name="team_admin_invite">管理员邀请</string>
+    <string name="team_everyone_invite">所有人邀请</string>
+    <string name="team_admin_update">管理员修改</string>
+    <string name="team_everyone_update">所有人修改</string>
+    <string name="team_invitee_need_authen">需要验证</string>
+    <string name="team_invitee_not_need_authen">不需要验证</string>
+    <string name="team_nickname">群昵称</string>
+    <string name="team_nickname_none">未填写</string>
+    <string name="team_identity">身份</string>
+    <string name="remove_member">移出本群</string>
+    <string name="team_member_info">成员信息</string>
+    <string name="team_admin">管理员</string>
+    <string name="team_creator">群主</string>
+    <string name="team_member">群成员</string>
+    <string name="update_success">保存成功</string>
+    <string name="update_failed">保存失败, code:%d</string>
+    <string name="no_permission">没有权限</string>
+    <string name="set_team_admin">设为管理员</string>
+    <string name="cancel_team_admin">取消管理员</string>
+    <string name="team_member_remove_confirm">确定要将其移出群组么?</string>
+    <string name="team_annourcement">群公告</string>
+    <string name="invite_member">邀请成员</string>
+    <string name="team_name">群名称</string>
+    <string name="team_introduce">群介绍</string>
+    <string name="team_extension">扩展示例</string>
+    <string name="click_set">点击设置</string>
+    <string name="create_advanced_team">创建高级群</string>
+    <string name="reach_team_member_capacity">成员数量不能超过%1$d</string>
+    <string name="team_authentication">身份验证</string>
+    <string name="team_invite">邀请他人权限</string>
+    <string name="team_info_update">群资料修改权限</string>
+    <string name="team_invitee_authentication">被邀请人身份验证</string>
+    <string name="create_team">创建群</string>
+    <string name="over_team_member_capacity">邀请失败，成员人数上限为%1$d人</string>
+    <string name="over_team_capacity">创建失败，创建群数量达到限制</string>
+    <string name="create_team_failed">创建失败</string>
+    <string name="create_team_success">创建成功</string>
+    <string name="team_announce_title">标题</string>
+    <string name="team_announce_content">公告内容</string>
+    <string name="team_announce_notice">请输入群公告标题</string>
+    <string name="my_team_card">我的群名片</string>
+    <string name="team_introduce_hint">点击填写群介绍</string>
+    <string name="team_extension_hint">点击修改扩展内容</string>
+    <string name="team_announce_hint">点击填写群公告</string>
+    <string name="team_notification_config">消息提醒</string>
+    <string name="team_transfer_without_member">没有可转移的群成员</string>
+    <string name="team_invite_members_success">群成员邀请已发出</string>
+    <string name="team_invite_members_failed">群成员邀请失败</string>
+    <string name="team_transfer_success">群转移成功</string>
+    <string name="team_transfer_failed">群转移失败</string>
+    <string name="quit_team_success">您已退群</string>
+    <string name="quit_team_failed">退群失败</string>
+    <string name="quit_normal_team_success">您已经退出讨论组</string>
+    <string name="quit_normal_team_failed">退出讨论组失败</string>
+    <string name="dismiss_team_success">群已解散</string>
+    <string name="dismiss_team_failed">解散群失败</string>
+    <string name="dismiss_team">解散本群</string>
+    <string name="transfer_team">转让群</string>
+    <string name="quit_team">退出群</string>
+    <string name="quit_normal_team">退出讨论组</string>
+    <string name="team_apply_to_join">申请加入</string>
+    <string name="advanced_team">高级群</string>
+    <string name="normal_team">讨论组</string>
+    <string name="team_name_toast">群名称不能为空</string>
+    <string name="not_allow_empty">不能为空</string>
+    <string name="chat_setting">聊天信息</string>
+    <string name="team_settings_name">设置名称</string>
+    <string name="normal_team_name">讨论组名称</string>
+    <string name="remove_member_success">移除成员成功</string>
+    <string name="remove_member_failed">移除成员失败</string>
+    <string name="invite_member_success">邀请成员成功</string>
+    <string name="invite_member_failed">邀请成员失败</string>
+    <string name="team_create_notice">请添加群成员</string>
+    <string name="team_settings_set_name">取个名字吧</string>
+    <string name="team_not_exist">该群不存在</string>
+    <string name="normal_team_not_exist">该讨论组不存在</string>
+    <string name="mute_msg">设置禁言</string>
+    <string name="set_head_image">设置头像</string>
+    <string name="team_update_cancel">取消更新</string>
+    <string name="team_update_failed">群头像设置失败</string>
+    
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:left_res_title="@drawable/back"
+        wk:right_res_title="@drawable/blackthreepoint" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_below="@id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+
+    <FrameLayout
+        android:id="@+id/ft_mengceng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mengceng1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/upjiantou" />
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/shangyiye" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="180dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/downjiantou" />
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/xiayiye" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="85dp"
+                android:background="@drawable/qiehuanpicture" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/textqiehuan" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

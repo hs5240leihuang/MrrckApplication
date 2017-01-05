@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/company"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="50dp" >
+
+        <TextView
+            android:id="@+id/tv_baseTitle"
+            style="@style/text_clo333"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/et_baseContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请填写"
+            android:paddingLeft="45dp"
+            android:textColor="@color/text"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_tiezibianji"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/photo_shanchu"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:scaleType="fitXY"
+        android:src="@drawable/fenggexian" />
+
+</LinearLayout>

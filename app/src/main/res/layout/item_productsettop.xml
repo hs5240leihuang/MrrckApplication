@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_time_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_product_time"
+            android:layout_width="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:background="#f1f1f1"
+            android:gravity="center"
+            android:text="1天"
+            android:textColor="#b3b3b3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_product_money"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:background="#feeacc"
+            android:gravity="center"
+            android:text="20元"
+            android:textColor="#fe8c2e"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

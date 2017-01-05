@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/chat_ImageMaxWidth"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/chat_ImageMaxWidth"
+    android:minHeight="@dimen/chat_ImageMinWidth" >
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/chat_ImageMaxWidth"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="@dimen/chat_ImageMaxWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv_videoSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#fefefe"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_VideoTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#fefefe"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <com.meiku.dev.views.RoundProgressBar
+        xmlns:android_custom="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/progressView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android_custom:prostyle="FILL"
+        android_custom:roundColor="#aafefefe"
+        android_custom:roundProgressColor="#aa58c1fd"
+        android_custom:roundWidth="1dip" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pc_video_play" />
+
+</RelativeLayout>

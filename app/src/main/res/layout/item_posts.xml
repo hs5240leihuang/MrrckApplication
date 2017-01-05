@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/postLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whiteround"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_postImg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/layouInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/layout_postImg" >
+
+            <ImageView
+                android:id="@+id/img_re"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="8dp"
+                android:baselineAlignBottom="true" />
+
+            <ImageView
+                android:id="@+id/img_jing"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:baselineAlignBottom="true" />
+
+            <ImageView
+                android:id="@+id/img_guan"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:baselineAlignBottom="true" />
+
+            <ImageView
+                android:id="@+id/img_ding"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:baselineAlignBottom="true" />
+
+            <com.meiku.dev.views.EmotionEditText
+                android:id="@+id/postTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:baselineAlignBottom="true"
+                android:editable="false"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/voteStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mrrck_bg"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/layout_postImg"
+            android:layout_below="@+id/layouInfo"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/layout_postImg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/postAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="美库网"
+                android:textColor="#999"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_huodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="#999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/view"
+                android:drawablePadding="4dp"
+                android:minWidth="50dp"
+                android:textColor="#999"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

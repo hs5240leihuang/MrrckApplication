@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meiku.dev.views.TopTitleBar xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/toptotile_apply_for_job"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="职位信息"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="提交" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toptotile_apply_for_job"
+        android:layout_above="@+id/sure_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+            <!--职位信息的布局-->
+            <include
+                android:id="@+id/position_information_id"
+                layout="@layout/position_information_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E9E9E9" />
+            <!--职位要求的布局-->
+            <include
+                android:id="@+id/job_requirements_id"
+                layout="@layout/job_requirements_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#E9E9E9" />
+            <!--招聘宝最下面的三个布局-->
+            <include
+                android:id="@+id/job_other_id"
+                layout="@layout/job_other_layout"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+android:id="@+id/sure_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+      >
+
+        <TextView
+            android:id="@+id/sure_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

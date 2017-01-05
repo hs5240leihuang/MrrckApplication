@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchbar"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="@drawable/searchbarbg_gray"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/et_msg_search"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:paddingLeft="11.5dp"
+        android:textColorHint="#aaaaaa"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/fdj" />
+
+</LinearLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="新增招聘宝城市"
+        wk:left_res_title="@drawable/back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/activity_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:text="会员类型" />
+
+                <ImageView
+                    android:id="@+id/iv_vipImg"
+                    android:layout_width="25dp"
+                    android:layout_height="21.5dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom" >
+
+                    <TextView
+                        android:id="@+id/tv_vipType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF3499"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_vipMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#FF3499"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16.5dp"
+                android:background="#d6d5d9" />
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:text="起始时间" />
+
+                <TextView
+                    android:id="@+id/tv_starttime"
+                    style="@style/dec_open_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="50dp"
+                    android:textColorHint="#aaaaaa" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16.5dp"
+                android:background="#d6d5d9" />
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:text="截止时间" />
+
+                <TextView
+                    android:id="@+id/tv_endtime"
+                    style="@style/dec_open_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="50dp"
+                    android:textColorHint="#aaaaaa" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F6FB" />
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:text="新增地区" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/dec_open_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"
+                    android:minHeight="50dp"
+                    android:textColorHint="#aaaaaa" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/righrtarrow_mine" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16.5dp"
+                android:background="#d6d5d9" />
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:text="新增费用" />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    style="@style/dec_open_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="50dp"
+                    android:textColorHint="#aaaaaa" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    style="@style/dec_open_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:minHeight="50dp"
+                    android:textColor="#FF3939" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16.5dp"
+                android:background="#d6d5d9" />
+
+            <LinearLayout
+                android:id="@+id/layout_openTips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#f5f6fb"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/butAreaTipTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="开通城市说明"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/butAreaTip1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="2dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/butAreaTip2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/butAreaTip3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/butAreaTip4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F6FB" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right" >
+
+                    <TextView
+                        style="@style/dec_open_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开通费用" />
+
+                    <TextView
+                        android:id="@+id/tv_allmoney_open"
+                        style="@style/dec_open_textview"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingLeft="15dp"
+                        android:textColor="#FF3939" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right" >
+
+                    <TextView
+                        style="@style/dec_open_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共        计" />
+
+                    <TextView
+                        android:id="@+id/tv_allmoney_bottom"
+                        style="@style/dec_open_textview"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingLeft="15dp"
+                        android:textColor="#FF3939" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/new_ok"
+                android:text="提交订单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

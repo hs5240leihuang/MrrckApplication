@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/toptotile_apply_for_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="发布需求" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.meiku.dev.views.ObservableWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutFanye"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ee484848"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:scaleType="fitXY"
+        android:src="@drawable/fenggexian" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/btnShoucang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/shoucang"
+            android:gravity="center"
+            android:text="收藏"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/fenxiang1"
+            android:gravity="center"
+            android:text="分享"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnGoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/fanye1"
+            android:gravity="center"
+            android:text="翻页"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnCreat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/faxintie"
+            android:gravity="center"
+            android:text="发新帖"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/mhuifu"
+            android:gravity="center"
+            android:text="评论"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

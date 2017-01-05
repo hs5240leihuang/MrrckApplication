@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="发表评论"
+        wk:left_res_title="@drawable/back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d5d6d9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/dec_open_layout"
+                android:layout_height="70dp" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:layout_width="60dp"
+                    android:text="总体" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RatingBar
+                        android:id="@+id/ratingbar_all"
+                        style="@style/starRatingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="22dp"
+                        android:numStars="5"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/starNum"
+                    style="@style/dec_open_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="0星" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d5d6d9" />
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:layout_width="60dp"
+                    android:text="施工" />
+
+                <com.meiku.dev.views.MyGridView
+                    android:id="@+id/gridview_shigong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:layout_width="60dp"
+                    android:text="服务" />
+
+                <com.meiku.dev.views.MyGridView
+                    android:id="@+id/gridview_fuwu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/dec_open_layout" >
+
+                <TextView
+                    style="@style/dec_open_textview"
+                    android:layout_width="60dp"
+                    android:text="设计" />
+
+                <com.meiku.dev.views.MyGridView
+                    android:id="@+id/gridview_sheji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d5d6d9" />
+
+            <LinearLayout
+                style="@style/dec_open_layout"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top" >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="2dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF3499" />
+
+                <EditText
+                    android:id="@+id/et_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:minLines="8"
+                    android:paddingLeft="2dp"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F6FB" />
+
+            <com.meiku.dev.views.MyGridView
+                android:id="@+id/gridview_uploadpic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="14dp"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="20dp"
+                android:text="图片格式:JPG、JPEG、PNG 最多可上传6张"
+                android:textColor="#aaaaaa"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F6FB" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="33dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/new_ok"
+                android:text="发布"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

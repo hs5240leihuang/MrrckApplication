@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/pull_refresh_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:cacheColorHint="#00000000"
+        android:clipChildren="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:gravity="center"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray" />
+
+    <include layout="@layout/include_select" />
+
+</LinearLayout>

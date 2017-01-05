@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatMoreLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/emotionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/chat_bottom_more_height"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <include layout="@layout/chat_bottom_add_layout" />
+
+</LinearLayout>

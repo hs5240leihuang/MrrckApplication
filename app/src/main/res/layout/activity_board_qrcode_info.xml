@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meiku.dev.ui.activitys.chat.FriendInformationActivity" >
+
+    <!-- 标题栏 -->
+
+    <com.meiku.dev.views.TopTitle
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/mrrck_bg"
+        wk:center_txt_title="板块分享"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="@string/share" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/boardImgId"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            fresco:failureImage="@drawable/gg_icon"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/gg_icon"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_head"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/boardNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/boardImgId"
+            android:text="板名"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/boardmiaoshuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/boardImgId"
+            android:layout_alignLeft="@+id/boardNameId"
+            android:text="描述" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/shareImgId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/sichat_placehold_icon" />
+
+</LinearLayout>

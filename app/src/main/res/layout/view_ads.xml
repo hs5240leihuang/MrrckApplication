@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ADlayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <!-- 广告 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adPager"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+        <!-- 点阵 -->
+
+        <com.meiku.dev.views.IndicatorView
+            android:id="@+id/indicatorGroup"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+        </com.meiku.dev.views.IndicatorView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

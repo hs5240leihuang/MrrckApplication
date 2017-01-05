@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58.57dp"
+    android:background="@drawable/selector_layout_common"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8.8dp" >
+
+    <LinearLayout
+        android:id="@+id/layout_addImage"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/tv_groupname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="中国海老祖家"
+        android:textColor="#333333"
+        android:textSize="14.86sp" />
+
+    <TextView
+        android:id="@+id/tv_membernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(15人)"
+        android:textColor="#666666"
+        android:textSize="13.71sp" />
+
+</LinearLayout>

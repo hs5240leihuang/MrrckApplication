@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meiku.dev.views.TopTitleBar
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_res_title="@drawable/back"
+        app:center_txt_title="发布作品"/>
+
+    <ImageView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <ScrollView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作品类别"
+                    style="@style/text_clo333"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:text="美容"
+                    android:id="@+id/tv_category"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    style="@style/text_clo333"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_gray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作品名称"
+                    style="@style/text_clo333"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    style="@style/text_clo333"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@drawable/edittext_cursor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_introduce"
+                    android:padding="5dp"
+                    android:background="@drawable/radius_border_bg_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="6"
+                    android:textSize="16sp"
+                    android:hint="点击添加作品介绍"
+                    android:gravity="left"/>
+
+                <FrameLayout
+                    android:id="@+id/layout_vedio"
+                    android:background="#F2F2F2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="190dp"
+                    android:layout_height="140dp">
+                    
+                    <ImageView
+                        android:id="@+id/iv_vedio"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shipin"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_addVedio"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    style="@style/text_clo999"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击添加视频作品(60秒)"/>
+
+                <Button
+                    android:id="@+id/btn_publish"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:text="发布"
+                    android:background="@drawable/radius_border_mrrck_solid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

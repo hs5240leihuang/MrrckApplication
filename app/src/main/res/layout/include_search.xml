@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchLL"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/goleftblack"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <com.meiku.dev.views.ClearEditText
+        android:id="@+id/et_msg_search"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/searchbarbg_gray"
+        android:clickable="true"
+        android:drawableLeft="@drawable/contact_fragment_icon_msg_search"
+        android:drawablePadding="15dp"
+        android:hint="请输入关键词搜索"
+        android:imeOptions="actionSearch"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        android:textSize="12sp" />
+
+</LinearLayout>

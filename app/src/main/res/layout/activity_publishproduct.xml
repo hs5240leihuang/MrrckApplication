@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="发布产品"
+        app:left_res_title="@drawable/back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="70dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp" >
+
+                    <ImageView
+                        android:id="@+id/img_neiceng"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_waiceng"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/text_clo999"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="（图片大小请控制在：640x640像素）"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="30dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="产品名称"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_productname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="请输入"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:id="@+id/layout_kinds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="产品类型"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_kinds"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="请选择"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_kinds_rightarrow"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:id="@+id/layout_provinces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="招商省份"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_provinces"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="请选择"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:id="@+id/layout_starttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="12dp"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="发布时间"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_starttime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="请选择"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layout_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="12dp"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="发布时长"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="请选择"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="12dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="产品联系人"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_peopleName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="请输入"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="12dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品联系电话"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_phoneNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="请输入"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/activity_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="产品详情"
+                    android:textColor="@color/black_light"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/addDetailLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/addOneInfoLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_border_bg_grey"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="4dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gray_add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="点击添加更多"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_common_use"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="emotion_local">
+        <item>:a1:</item>
+        <item>:a2:</item>
+        <item>:a3:</item>
+        <item>:a4:</item>
+        <item>:a5:</item>
+        <item>:a6:</item>
+        <item>:a7:</item>
+        <item>:a8:</item>
+        <item>:a9:</item>
+
+        <item>:b1:</item>
+        <item>:b2:</item>
+        <item>:b3:</item>
+        <item>:b4:</item>
+        <item>:b5:</item>
+        <item>:b6:</item>
+        <item>:b7:</item>
+        <item>:b8:</item>
+        <item>:b9:</item>
+
+        <item>:c1:</item>
+        <item>:c2:</item>
+        <item>:c3:</item>
+        <item>:c4:</item>
+        <item>:c5:</item>
+        <item>:c6:</item>
+        <item>:c7:</item>
+        <item>:c8:</item>
+        <item>:c9:</item>
+
+        <item>:l7:</item>
+        
+        <item>:d1:</item>
+        <item>:d2:</item>
+        <item>:d3:</item>
+        <item>:d4:</item>
+        <item>:d5:</item>
+        <item>:d6:</item>
+        <item>:d7:</item>
+        <item>:d8:</item>
+        <item>:d9:</item>
+
+        <item>:e1:</item>
+        <item>:e2:</item>
+        <item>:e3:</item>
+        <item>:e4:</item>
+        <item>:e5:</item>
+        <item>:e6:</item>
+        <item>:e7:</item>
+        <item>:e8:</item>
+        <item>:e9:</item>
+
+        <item>:f1:</item>
+        <item>:f2:</item>
+        <item>:f3:</item>
+        <item>:f4:</item>
+        <item>:f5:</item>
+        <item>:f6:</item>
+        <item>:f7:</item>
+        <item>:f8:</item>
+        <item>:f9:</item>
+
+        <item>:l7:</item>
+        
+        <item>:g1:</item>
+        <item>:g2:</item>
+        <item>:g3:</item>
+        <item>:g4:</item>
+        <item>:g5:</item>
+        <item>:g6:</item>
+        <item>:g7:</item>
+        <item>:g8:</item>
+        <item>:g9:</item>
+
+        <item>:h1:</item>
+        <item>:h2:</item>
+        <item>:h3:</item>
+        <item>:h4:</item>
+        <item>:h5:</item>
+        <item>:h6:</item>
+        <item>:h7:</item>
+        <item>:h8:</item>
+        <item>:h9:</item>
+
+        <item>:i1:</item>
+        <item>:i2:</item>
+        <item>:i3:</item>
+        <item>:i4:</item>
+        <item>:i5:</item>
+        <item>:i6:</item>
+        <item>:i7:</item>
+        <item>:i8:</item>
+        <item>:i9:</item>
+
+        <item>:l7:</item>
+        
+        <item>:j1:</item>
+        <item>:j2:</item>
+        <item>:j3:</item>
+        <item>:j4:</item>
+        <item>:j5:</item>
+        <item>:j6:</item>
+        <item>:j7:</item>
+        <item>:j8:</item>
+        <item>:j9:</item>
+
+        <item>:k1:</item>
+        <item>:k2:</item>
+        <item>:k3:</item>
+        <item>:k4:</item>
+        <item>:k5:</item>
+        <item>:k6:</item>
+        <item>:k7:</item>
+        <item>:k8:</item>
+        <item>:k9:</item>
+
+        <item>:l1:</item>
+        <item>:l2:</item>
+        <item>:l3:</item>
+        <item>:l4:</item>
+        <item>:l5:</item>
+        <item>:l7:</item>
+
+    </string-array>
+
+    <string-array name="emotion_remote">
+        <item>[微笑]</item>
+        <item>[撇嘴]</item>
+        <item>[色]</item>
+        <item>[发呆]</item>
+        <item>[得意]</item>
+        <item>[流泪]</item>
+        <item>[害羞]</item>
+        <item>[闭嘴]</item>
+        <item>[睡]</item>
+        
+        <item>[大哭]</item>
+        <item>[尴尬]</item>
+        <item>[发怒]</item>
+        <item>[调皮]</item>
+        <item>[龇牙]</item>
+        <item>[惊讶]</item>
+        <item>[难过]</item>
+        <item>[酷]</item>
+        <item>[冷汗]</item>
+        
+        <item>[抓狂]</item>
+        <item>[吐]</item>
+        <item>[偷笑]</item>
+        <item>[愉快]</item>
+        <item>[白眼]</item>
+        <item>[傲慢]</item>
+        <item>[饥饿]</item>
+        <item>[困]</item>
+        <item>[惊恐]</item>
+        
+        <item>[删除]</item>
+        
+        <item>[流汗]</item>
+        <item>[憨笑]</item>
+        <item>[休闲]</item>
+        <item>[奋斗]</item>
+        <item>[咒骂]</item>
+        <item>[疑问]</item>
+        <item>[嘘]</item>
+        <item>[晕]</item>
+        <item>[疯了]</item>
+        
+        <item>[衰]</item>
+        <item>[骷髅]</item>
+        <item>[敲打]</item>
+        <item>[再见]</item>
+        <item>[擦汗]</item>
+        <item>[抠鼻]</item>
+        <item>[鼓掌]</item>
+        <item>[糗大了]</item>
+        <item>[坏笑]</item>
+        
+        <item>[左哼哼]</item>
+        <item>[右哼哼]</item>
+        <item>[哈欠]</item>
+        <item>[鄙视]</item>
+        <item>[委屈]</item>
+        <item>[快哭了]</item>
+        <item>[阴险]</item>
+        <item>[亲亲]</item>
+        <item>[吓]</item>
+        
+        <item>[删除]</item>
+        
+        <item>[可怜]</item>
+        <item>[菜刀]</item>
+        <item>[西瓜]</item>
+        <item>[啤酒]</item>
+        <item>[篮球]</item>
+        <item>[乒乓]</item>
+        <item>[咖啡]</item>
+        <item>[饭]</item>
+        <item>[猪头]</item>
+        
+        <item>[玫瑰]</item>
+        <item>[凋谢]</item>
+        <item>[嘴唇]</item>
+        <item>[爱心]</item>
+        <item>[心碎]</item>
+        <item>[蛋糕]</item>
+        <item>[闪电]</item>
+        <item>[炸弹]</item>
+        <item>[刀]</item>
+        
+        <item>[足球]</item>
+        <item>[瓢虫]</item>
+        <item>[便便]</item>
+        <item>[月亮]</item>
+        <item>[太阳]</item>
+        <item>[礼物]</item>
+        <item>[拥抱]</item>
+        <item>[强]</item>
+        <item>[弱]</item>
+        
+        <item>[删除]</item>
+        
+        <item>[握手]</item>
+        <item>[胜利]</item>
+        <item>[抱拳]</item>
+        <item>[勾引]</item>
+        <item>[拳头]</item>
+        <item>[差劲]</item>
+        <item>[爱你]</item>
+        <item>[NO]</item>
+        <item>[OK]</item>
+        
+        <item>[爱情]</item>
+        <item>[飞吻]</item>
+        <item>[跳跳]</item>
+        <item>[发抖]</item>
+        <item>[怄火]</item>
+        <item>[转圈]</item>
+        <item>[磕头]</item>
+        <item>[回头]</item>
+        <item>[跳绳]</item>
+        
+        <item>[投降]</item>
+        <item>[兴奋]</item>
+        <item>[天使]</item>
+        <item>[向前进]</item>
+        <item>[空手道]</item>
+        <item>[删除]</item>
+    </string-array>
+
+</resources>

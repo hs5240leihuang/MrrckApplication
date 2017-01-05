@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPart2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_service_itemhead" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/lineclo" />
+
+    <com.meiku.dev.views.MyListView
+        android:id="@+id/midListview2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+       android:divider="@color/lineclo"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/lineclo" />
+
+    <include layout="@layout/include_service_bottom_more" />
+
+</LinearLayout>

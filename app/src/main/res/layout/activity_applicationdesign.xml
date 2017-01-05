@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="申请设计"
+        wk:left_res_title="@drawable/back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/lin_huati"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="所在城市"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:hint="请选择"
+            android:textColorHint="#aaaaaa"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="您的姓名"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#FF3499" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:hint="请输入"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp" >
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="手机号"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#FF3499" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:hint="请输入"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_xieyi"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/zhaozhuangxiuxieyi" />
+
+        <TextView
+            android:id="@+id/tv_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/new_ok"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" >
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="33dp"
+            android:text="      您的消息将被严格保密，资料提交后客服将在24小时内联系您"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/jingshi" />
+    </RelativeLayout>
+
+</LinearLayout>

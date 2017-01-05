@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatTextLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:minHeight="@dimen/chat_BottomHeight"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/turnToAudioBtn"
+        android:layout_width="@dimen/chat_BottomBtnSize"
+        android:layout_height="@dimen/chat_BottomBtnSize"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/chat_BottomBtnMargin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/chat_BottomBtnMargin"
+        android:background="@drawable/chat_btn_voice_selector"
+        android:textColor="@color/chat_base_color_text_black"
+        android:visibility="visible" />
+
+    <com.meiku.dev.views.EmotionEditText
+        android:id="@+id/textEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:hint="请输入聊天内容..."
+        android:maxLines="4"
+        android:minHeight="40dp"
+        android:textColor="#333"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        android:textSize="14sp" />
+
+</LinearLayout>

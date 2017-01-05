@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3e3e3"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/chat_common_guide_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height"
+        android:layout_below="@id/alpha"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_choosestatus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_weixuanzhong_circle" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_headimage"
+            android:layout_width="36.57dp"
+            android:layout_height="36.57dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gg_icon" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="冰点"
+            android:textColor="#333"
+            android:textSize="17.14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

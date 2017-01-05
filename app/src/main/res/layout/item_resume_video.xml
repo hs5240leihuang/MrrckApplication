@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/selVideoCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/img_vice"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/job_employ_xh"
+        android:layout_toRightOf="@+id/selVideoCB"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_vice"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/video_title_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="未命名"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/resumeTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_yellow_btn"
+                android:padding="5dp"
+                android:text="设为简历"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_time_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_title_rel"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/release_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2015-08-13 17:17"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/duration_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:text="00:16"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/video_Layout">
+
+            <ImageView
+                android:id="@+id/video_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <ImageView
+                android:id="@+id/view_stop_image"
+                android:layout_width="@dimen/default_head_icon_width"
+                android:layout_height="@dimen/default_head_icon_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/pc_video_play" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

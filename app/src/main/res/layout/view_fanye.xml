@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/btnFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/left_arrow"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:textColor="@android:color/white"
+        android:text="首页" />
+
+    <TextView
+        android:id="@+id/btnLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/right_arrow"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:textColor="@android:color/white"
+        android:text="尾页" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none"
+        android:layout_toLeftOf="@+id/btnLast"
+        android:layout_toRightOf="@+id/btnFirst" >
+
+        <LinearLayout
+            android:id="@+id/pagesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

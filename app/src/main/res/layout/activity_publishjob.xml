@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:app="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:center_txt_title="发布职位"
+        app:left_res_title="@drawable/back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="3dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#FE4D78" />
+
+                    <TextView
+                        android:id="@+id/tv_modelName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="职位信息"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职位名称" />
+
+                    <EditText
+                        android:id="@+id/et_jobName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请输入招聘职位名称"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_jobType"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职位类别" />
+
+                    <TextView
+                        android:id="@+id/tv_jobType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作性质" />
+
+                    <RadioGroup
+                        android:id="@+id/group_jobType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbtn_quanzhi"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="全职"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_jianzhi"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="兼职"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_shixi"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="实习"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_needNum"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="需要人数" />
+
+                    <TextView
+                        android:id="@+id/tv_needNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_salary"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="薪资待遇" />
+
+                    <TextView
+                        android:id="@+id/tv_salary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_fuli"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="福利待遇" />
+
+                    <TextView
+                        android:id="@+id/tv_fuli"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    style="@style/company"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上班地址" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入详细地址"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_wodeqiuzhi"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#FE4D78" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="职位要求 "
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别" />
+
+                    <RadioGroup
+                        android:id="@+id/group_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbtn_man"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="男"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_woman"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="女"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_allGender"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="不限"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="婚姻状况" />
+
+                    <RadioGroup
+                        android:id="@+id/group_marriage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbtn_notmarried"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="未婚"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_married"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="已婚"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_allMarry"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_radio_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="不限"
+                            android:textColor="@drawable/radiotxtselector"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_age"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年龄" />
+
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_xueli"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历" />
+
+                    <TextView
+                        android:id="@+id/tv_xueli"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_experience"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作经验" />
+
+                    <TextView
+                        android:id="@+id/tv_experience"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    style="@style/company"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职位描述" />
+
+                    <EditText
+                        android:id="@+id/et_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/radius_border_bg_grey"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="请输入职位描述"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        android:minLines="4"
+                        android:paddingLeft="5dp"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/activity_bg" />
+
+                <LinearLayout
+                    android:id="@+id/layout_comeTime"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="到岗时间" />
+
+                    <TextView
+                        android:id="@+id/tv_comeTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_skill"
+                    style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专业技能" />
+
+                    <TextView
+                        android:id="@+id/tv_skill"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout
+                    android:id="@+id/layout_publishCity"
+                    style="@style/company"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布城市" />
+
+                    <TextView
+                        android:id="@+id/tv_publishCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布有效时间" />
+
+                    <EditText
+                        android:id="@+id/et_publishDays"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入天数"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系人" />
+
+                    <EditText
+                        android:id="@+id/et_phoneperson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请输入联系人姓名"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+
+                <LinearLayout style="@style/company" >
+
+                    <include layout="@layout/include_mi_empty" />
+
+                    <TextView
+                        style="@style/text_clo333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话" />
+
+                    <EditText
+                        android:id="@+id/et_phoneconnect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请输入联系电话"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fenggexian" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_common_use"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

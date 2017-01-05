@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak_gray"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="创建名企词条"
+        wk:left_res_title="@drawable/back" />
+
+    <ScrollView
+        android:id="@+id/sc_lview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_citiao_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#FE4D78" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="基本信息"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="企业名称" />
+
+                <EditText
+                    android:id="@+id/et_copanyName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                android:id="@+id/lin_time"
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="成立时间 " />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="未选择"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/right_arrow_gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="公司位置" />
+
+                <EditText
+                    android:id="@+id/et_companyAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="注册资本" />
+
+                <EditText
+                    android:id="@+id/et_ziben"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="法定代表人" />
+
+                <EditText
+                    android:id="@+id/et_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                android:id="@+id/lin_type"
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="企业类型 " />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="未选择"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/right_arrow_gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="组织机构代码" />
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="经营范围" />
+
+                <EditText
+                    android:id="@+id/et_jingyingfanwei"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="联系人" />
+
+                <EditText
+                    android:id="@+id/et_phoneperson"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                android:id="@+id/layout_baseInfoMore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/layout_addMoreBaseInfo"
+                style="@style/company"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/entry_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加自定义项"
+                    android:textColor="@color/mrrck_bg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/radius_border_bg_mrrck"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_createntry_moreinfo" />
+
+</LinearLayout>

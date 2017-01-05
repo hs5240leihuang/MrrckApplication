@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="意向申请"
+        wk:left_res_title="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            style="@style/text_clo666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意向产品"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_clo333_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/text_clo333_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F9F9F9" />
+
+    <TextView
+        style="@style/text_clo666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="意向说明"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_instruct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/radius_border_bg_grey"
+        android:gravity="top|left"
+        android:hint="点击输入"
+        android:maxLength="100"
+        android:maxLines="4"
+        android:minLines="4"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/edittext_cursor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            style="@style/text_clo666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            style="@style/text_clo333_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入"
+            android:maxLength="10"
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F9F9F9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            style="@style/text_clo666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/text_clo333_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入"
+            android:maxLength="13"
+            android:text=""
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F9F9F9" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radius_border_mrrck_solid"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

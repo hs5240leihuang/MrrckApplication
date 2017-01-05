@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="发布装修优惠"
+        wk:left_res_title="@drawable/back" />
+
+    <LinearLayout
+        android:layout_below="@id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D6D5D9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="29.5dp"
+                android:background="#FF3499" />
+
+            <EditText
+                android:id="@+id/et_youhuione"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="29.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="装修优惠1"
+                android:maxLength="100"
+                android:textColorHint="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8.5dp"
+            android:background="#D6D5D9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="29.5dp"
+                android:background="#FF3499" />
+
+            <EditText
+                android:id="@+id/et_youhuitwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="29.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="装修优惠2"
+                android:maxLength="100"
+                android:textColorHint="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8.5dp"
+            android:background="#D6D5D9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="29.5dp"
+                android:background="#FF3499" />
+
+            <EditText
+                android:id="@+id/et_youhuithree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="29.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="装修优惠3"
+                android:maxLength="100"
+                android:textColorHint="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8.5dp"
+            android:background="#D6D5D9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="29.5dp"
+                android:background="#FF3499" />
+
+            <EditText
+                android:id="@+id/et_youhuifour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="29.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="装修优惠4"
+                android:maxLength="100"
+                android:textColorHint="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8.5dp"
+            android:background="#D6D5D9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D6D5D9" />
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_ing"
+            android:text="确定"
+            android:textColor="#FF3499" />
+    </LinearLayout>
+
+</RelativeLayout>

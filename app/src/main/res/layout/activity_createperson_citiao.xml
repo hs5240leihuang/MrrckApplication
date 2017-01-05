@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak_gray"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="创建达人词条"
+        wk:left_res_title="@drawable/back" />
+
+    <ScrollView
+        android:id="@+id/sc_lview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_citiao_info" />
+            <!-- 基本信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#FE4D78" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="基本信息"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 中文名 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="中文名" />
+
+                <EditText
+                    android:id="@+id/et_chinesename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 外文名 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="外文名" />
+
+                <EditText
+                    android:id="@+id/et_foreignname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 别名 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="别名" />
+
+                <EditText
+                    android:id="@+id/et_othername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 国籍 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="国籍" />
+
+                <EditText
+                    android:id="@+id/et_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 民族 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="民族" />
+
+                <EditText
+                    android:id="@+id/et_nation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 出身地 -->
+
+            <LinearLayout
+                android:id="@+id/lin_chushengcity"
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="出身地" />
+
+                <TextView
+                    android:id="@+id/tv_chushengcity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="未选择"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/right_arrow_gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 出身日期 -->
+
+            <LinearLayout
+                android:id="@+id/lin_chushengtime"
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="出身日期 " />
+
+                <TextView
+                    android:id="@+id/tv_chushengtime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="未选择"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/right_arrow_gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 职业 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="职业" />
+
+                <EditText
+                    android:id="@+id/et_profession"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 毕业院校 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="毕业院校" />
+
+                <EditText
+                    android:id="@+id/et_school"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 信仰 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="信仰" />
+
+                <EditText
+                    android:id="@+id/et_faith"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:maxLength="10"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 主要成就 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="50dp" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="主要成就 " />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_achievement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="请填写"
+                            android:paddingLeft="45dp"
+                            android:textColor="@color/text"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_addAchievement"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/entry_grayadd" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_addAchievement"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+            <!-- 代表作品 -->
+
+            <LinearLayout
+                style="@style/company"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/text_clo333"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="代表作品" />
+
+                <EditText
+                    android:id="@+id/et_works"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请填写"
+                    android:paddingLeft="45dp"
+                    android:textColor="@color/text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <LinearLayout
+                android:id="@+id/layout_baseInfoMore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/layout_addMoreBaseInfo"
+                style="@style/company"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/entry_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加自定义项"
+                    android:textColor="@color/mrrck_bg" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/fenggexian" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/radius_border_bg_mrrck"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 个人简介 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FE4D78" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="个人简介"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/bak_gray"
+                android:gravity="top"
+                android:hint="点击添加,个人特色为主,限140字。"
+                android:padding="5dp"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="14sp" />
+            <!-- 兴趣爱好 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FE4D78" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="兴趣爱好"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_aihao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/bak_gray"
+                android:gravity="top"
+                android:padding="5dp"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="14sp" />
+            <!-- 个人说明 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FE4D78" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="个人说明"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_shuomoing"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/bak_gray"
+                android:gravity="top"
+                android:padding="5dp"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_addmoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/btn_addmore"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/bak_gray"
+                android:gravity="center"
+                android:text="⊕  点击添加更多介绍"
+                android:textColor="#666666" />
+            <!-- 相册/个人作品 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FE4D78" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="相册/个人作品"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.meiku.dev.views.MyGridView
+                android:id="@+id/gv_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_border_bg_mrrck"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

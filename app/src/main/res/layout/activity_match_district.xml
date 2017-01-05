@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.meiku.dev.views.TopTitleBar
+                android:id="@+id/toptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:center_txt_title="赛事"
+                app:left_res_title="@drawable/back" />
+
+            <TextView
+                style="@style/text_clo333_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="已开赛城市" />
+
+            <com.meiku.dev.views.MyGridView
+                android:id="@+id/gv_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="15dp"
+                android:listSelector="@drawable/selector_popupwindow"
+                android:numColumns="3"
+                android:padding="15dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="15dp" />
+
+            <TextView
+                style="@style/text_clo333_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="即将开赛城市" />
+
+            <com.meiku.dev.views.MyGridView
+                android:id="@+id/gv_start_soon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="15dp"
+                android:listSelector="@drawable/selector_popupwindow"
+                android:numColumns="3"
+                android:padding="15dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_border_bg"
+    android:orientation="vertical" >
+
+    <!-- 提示 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray" />
+
+    <!-- 信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="失败信息"
+            android:textColor="#666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_common_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@drawable/textselctor_w_2_b" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/mrrck_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_common_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@drawable/textselctor_w_2_b" />
+    </LinearLayout>
+
+</LinearLayout>

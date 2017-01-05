@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <com.meiku.dev.views.TopTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mrrck_bg"
+        app:center_txt_title="选择联系人"
+        app:left_res_title="@drawable/back"
+        app:right_txt_title="确定" >
+    </com.meiku.dev.views.TopTitle>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.meiku.dev.views.MaxWidthHorizontalSrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_headimage"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.meiku.dev.views.MaxWidthHorizontalSrollView>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="搜索"
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+    </LinearLayout>
+
+   
+
+    <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top" >
+
+            <ListView
+                android:id="@+id/list_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/line"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/contact_fragment_gallery_contacts_dialog_background"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@color/contact_base_actionbar_bg"
+                android:textSize="35.0dip"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.meiku.dev.views.EnLetterView
+            android:id="@+id/right_letter"
+            android:layout_width="25dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/contact_num_sort_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_friends_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/layout_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

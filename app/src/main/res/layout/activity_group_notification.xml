@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.meiku.dev.views.TopTitleBar
+        android:background="@color/white"
+        app:left_res_title="@drawable/back"
+        app:center_txt_title="群介绍"
+        app:right_txt_title="完成"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLength="300"
+        android:gravity="left|top"
+        android:textCursorDrawable="@drawable/edittext_cursor" 
+        android:id="@+id/notification"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+</LinearLayout>

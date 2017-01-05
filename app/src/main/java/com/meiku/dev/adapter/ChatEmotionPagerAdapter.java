@@ -1,0 +1,48 @@
+package com.meiku.dev.adapter;
+
+import android.support.v4.view.PagerAdapter;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by lzw on 14-9-25.
+ */
+public class ChatEmotionPagerAdapter extends PagerAdapter {
+
+    private List<View> views = new ArrayList<View>();
+
+    public ChatEmotionPagerAdapter(List<View> views) {
+        this.views = views;
+    }
+
+    @Override
+    public int getCount() {
+        return views.size();
+    }
+
+    @Override
+    public boolean isViewFromObject(View view, Object o) {
+        return view == o;
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        View v = views.get(position);
+
+        ViewGroup parent = (ViewGroup) v.getParent();
+        if (parent != null) {
+            parent.removeAllViews();
+        }
+        container.addView(v);
+
+        return v;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        container.removeView(views.get(position));
+    }
+}

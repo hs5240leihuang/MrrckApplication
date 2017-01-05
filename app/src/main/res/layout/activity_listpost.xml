@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bak_gray"
+    android:orientation="vertical" >
+
+    <com.meiku.dev.views.TopTitleBar
+        xmlns:wk="http://schemas.android.com/apk/res/com.meiku.dev"
+        android:id="@+id/toptotile_apply_for_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        wk:center_txt_title="名家问答"
+        wk:left_res_title="@drawable/back"
+        wk:right_txt_title="发帖" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/pull_refresh_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:smoothScrollbar="true" />
+
+            <com.meiku.dev.views.fab.ButtonFloat
+                xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/buttonFloat"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="22dp"
+                android:background="@color/mrrck_bg"
+                android:visibility="invisible"
+                materialdesign:animate="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

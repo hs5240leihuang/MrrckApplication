@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <com.meiku.dev.views.MyVideoView
+        android:id="@+id/videoviewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_trans"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/play_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_trans"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/video_play_back_pause_or_stop_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="7.5dp"
+            android:src="@drawable/video_pause_icon" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable"
+                android:secondaryProgress="0" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/timeElapsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:text="--:--"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/timeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:text="--:--"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.meiku.dev.views.VerticalSeekBar
+            android:id="@+id/volume_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/video_play_back_volume_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/sound_icon" />
+    </LinearLayout>
+
+</RelativeLayout>
